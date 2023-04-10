@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 글자속성</title>
+    <!-- 외부스타일연결 -->
+    <link rel="stylesheet" href="css/font_style.css">
+</head>
+<body>
+    <h1>CSS글자속성</h1>
+    <p>글자에 관련된 속성은 글꼴, 글자크기, 글자굵기, 기울임, 줄간격, 대소문자, 글자속성 등
+        주된 일곱가지를 필수적으로 알고 있어야 한다.
+    </p>
+
+    <strong>color을 제외한 나머지6가지 속성은 한줄쓰기가 가능하다.</strong>
+    <table border="1">
+        <tr>
+            <td>속성명</td>
+            <td>속성값종류</td>
+            <td>설명</td>
+        </tr>
+        <tr>
+            <td>font-family</td>
+            <td class="font001">내컴퓨터에 등록되어 있는 폰트/ 웹폰트활용가능</td>
+            <td>글꼴을 인용부호에 감싼다. <br>
+            다국적사용자를 위한 페이지로 사용할시 대체폰트의 의미로, serif(명조, 궁서)/Sans-serif(고딕)를 작성한다.</td>
+        </tr>
+        <tr>
+            <td>font-size</td>
+            <td class="font002">단위를 여러개로 적용할 수 있으며 16px, 1em 등으로 기본값이
+                설정되어 있다.</td>
+            <td>숫자로 기입시 필수적으로 단위와 함께 적용하고, 기본크기를 기반으로 대략적비율을
+                형성하여 small, large등으로 기재가 가능하다.
+            </td>
+        </tr>
+        <tr>
+            <td>font-style</td>
+            <td class="font003">italic / normal</td>
+            <td>글자의 기울기를 지정 / 기본값이 기울어져 있는 태그의 경우 설정값변경으로 사용가능하다.</td>
+        </tr>
+        <tr>
+            <td>font-variant</td>
+            <td class="font004"><span>smell-caps</span> / normal</td>
+            <td>작은 대문자로 변경하거나 일반형으로 작성 / 그 외 변형은 추가속성에서 설명할 예정임</td>
+        </tr>
+        <tr>
+            <td>font-weight</td>
+            <td class="font005">blod/normal 로 쓰거나 숫자 400-normal , 600 blod</td>
+            <td>글자의 두께를 지정한다. 서체에 따라 적용숫자는 다를 수 있다.</td>
+        </tr>
+        <tr>
+            <td>line-height</td>
+            <td class="font006">기본값 1.4(140%) / <br>단위가 없음</td>
+            <td class="font007">br로 설정된 강제줄바꿈을 포함 <br> 
+                위아래 글씨사이 설정,작성하지 않을시 기본값적용
+            </td>
+        </tr>
+    </table>
+    <p>위의 모든 속성은 font 속성 하나로 일렬쓰기가 가능하다.</p>
+    <p>font: <span class="font008">font-weight, font-style, font-variant</span> <span class="font009">font-size/line-height</span>
+    <span class="font010">font-family</span></p>
+    
+    <strong> font-size와 font-family를 필수적으로 작성하여야 일렬작성을 할수 있으며
+        맨앞그룹인 꾸밈속성의 순서는 상관이 없다.
+    </strong>
+
+    <h3>글자추가속성</h3>
+
+    <p>주로 글자나 단어보다는 문장에서 많이 사용된다.</p>
+
+    <ul>
+        <li>text-aline 
+            <ul>
+                <li>특징 - 글씨를 정렬하는 특징</li>
+                <li>종류 - center, right, left, justify(양쪽정렬)</li>
+                <li>주의사항 - block, inline-block 요소에서만 사용가능</li>
+                <li>justify - 양쪽정렬로 내용안에서 공간이 정해져 있고 두줄이상이
+                    글씨에서만 적용이된다.
+                </li>
+            </ul>
+        </li>
+        <li>text-decoration 
+            <ul>
+                <li>none - 제거</li>
+                <li>underline - 밑줄</li>
+                <li>line-through - 취소선(가운데선)</li>
+                <li>overline - 윗줄</li>
+            </ul>
+        </li>
+        <li>text-transform 
+            <ul>
+                <li>특징 - 글자의 형태를 변형하는 유형으로 font-variant의 확장형
+                    개념으로 보면 된다.
+                </li>
+                <li>uppercase - 모두 대문자변경</li>
+                <li>lowercase - 모두 소문자변경</li>
+                <li>capitalize - 문장의 첫 글자만 대문자변경</li>
+            </ul>
+        </li>
+        <li>text-indent
+            <ul>
+                <li>특징 - 문단의 첫 머리를 들여쓰기 또는 밀어쓰기기능</li>
+                <li>주의사항 - block 또는 inline-block 에 사용가능</li>
+                <li>주요사용처 - 대체텍스트를 사용해야할시 마이너스값을 활용하여 화면에서 벗어나게 사용</li>
+            </ul>
+        </li>
+        <li>letter-spacing - 글자와 글자간격설정, 글씨사이에 박스를 넣어준다는 개념 숫자와 단위로 설정,
+            마이너스값도 적용가능
+        </li>
+    </ul>
+
+    <h4>예제작성</h4>
+    <div class="aline">
+        <p>fugit expedita nemo quas distinctio.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p> Dicta a architecto dolores excepturi</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, quo repellendus. Vel vitae voluptatem laboriosam magnam inventore hic quas totam quia porro. Reiciendis provident earum rem explicabo, iusto natus eius?</p>
+    </div>
+
+    <div class="deco">
+        <p>다 추억과 소녀들의 어머님, 봅니다. 밤이 지나가는 언덕 소녀들의 풀이 있습니다. 나는 써 이런 봄이 별 계십니다. 말 내일 무덤 가득 밤을 둘 오면 묻힌 버리었습니다.</p>
+        <p>지나고 책상을 잠, 했던 묻힌 그리워 거외다. 파란 하나에 헤는 다하지 하나 까닭입니다. 새겨지는 쓸쓸함과 불러 까닭입니다.</p>
+        <p>것은 하나에 덮어 있습니다. 아직 이름을 소녀들의 버리었습니다. 노새, 나의 덮어 그러나 옥 북간도에 사람들의 내 소녀들의 봅니다. 오면 릴케 소학교 하나에 있습니다.</p>
+        <p>없이 지나가는 흙으로 하나에 가난한 이름자 까닭이요, 봅니다. 까닭이요, 파란 지나고 불러 밤을 사랑과 이름과, 하나에 계절이 있습니다. 오는 아름다운 다하지 차 이름과, 까닭입니다.</p>
+    </div>
+
+    <div class="trans">
+        <p>fugit expedita nemo quas distinctio.</p>
+        <p>fugit expedita nemo quas distinctio.</p>
+        <p>fugit expedita nemo quas distinctio.</p>
+    </div>
+
+    <div class="indent">
+        <p><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Quo laboriosam repudiandae animi hic at quos reiciendis ipsam provident assumenda, nisi quam eligendi facilis doloribus asperiores, iste ad saepe, quidem nesciunt.</p>
+        <p><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Quo laboriosam repudiandae animi hic at quos reiciendis ipsam provident assumenda, nisi quam eligendi facilis doloribus asperiores, iste ad saepe, quidem nesciunt.</p>
+        <p><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Quo laboriosam repudiandae animi hic at quos reiciendis ipsam provident assumenda, nisi quam eligendi facilis doloribus asperiores, iste ad saepe, quidem nesciunt.</p>
+    </div>
+</body>
+</html>
