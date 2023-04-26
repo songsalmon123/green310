@@ -9,6 +9,8 @@
     <!-- <link rel="stylesheet" href="css/grid-guide.css" /> -->
     <!-- 외부스타일시트연결 -->
     <link rel="stylesheet" href="css/blog_style.css" />
+    <!--  폰트어썸cCDN -->
+    <script src="https://kit.fontawesome.com/85ac904405.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="box1">
@@ -31,18 +33,36 @@
     <div class="boxA">
       <div class="box3">
         <section class="story">
+          
+          <div class="story-cat">
+            <ul>
+              <li><a href="#">음식</a></li>
+              <li><a href="#">외출</a></li>
+            </ul>
+          </div>
+
           <h1>토마토를 맛있게 먹는 방법</h1>
+          <div class="storyinfo">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <time datetime="2023-04-26">2023년 4월 26일</time>
+          </div>
           <img src="img/tomato.jpg" alt="" />
           <p>
             수확한 토마토를 바로 먹고 싶어서 서울 외곽에 있는 토마토 농가에 직접
             다녀왔습니다. 이번에 온 농가의 토마토는 신선하고 저렴하군요.
           </p>
+
+          <h2>신선한 토마토 구별 방법</h2>
+
           <p>
             신선한 토마토는 꼭지가 초록색이고 곧게 되어 있습니다. 빨간 열매는
             껍질의 감이 좋고 둥근 것이 좋습니다. 당도가 높은 토마토는 물이
             가라앉으므로 쉽게 판별할 수 있습니다. 하지만 무조건 달다고 좋은 것은
             아니랍니다.
           </p>
+
+          <h2>토마토를 맛있게 먹는 방법</h2>
+
           <p>
             일반적으로 토마토는 물에 씻어서 바로 먹는 것이 가장 좋습니다. 더운
             날에 맛있는 토마토를 먹으면 그것만으로도 행복한데요. 수분 공급도
@@ -58,10 +78,10 @@
         <aside class="sidemenu">
             <h1>특집 기사</h1>
             <ul>
-                <li><a href="#">알기 쉬운 지도 읽기 방법</a></li>
-                <li><a href="#">처음부터 시작하는 토마토 기르기</a></li>
-                <li><a href="#">스마트폰 요리 애플리케이션</a></li>
-                <li><a href="#">배터리를 오래 쓰는 방법</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> 알기 쉬운 지도 읽기 방법</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> 처음부터 시작하는 토마토 기르기</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> 스마트폰 요리 애플리케이션</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> 배터리를 오래 쓰는 방법</a></li>
             </ul>
         </aside>
 
@@ -69,8 +89,8 @@
         <aside class="recommend">
             <h1>추천 기사</h1>
             <ul>
-                <li><a href="#">처음부터 시작하는 꽃꽂이</a></li>
-                <li><a href="#">오래된 스마트폰을 충전했더니</a></li>
+                <li><a href="#"><img src="img/flower.jpg"><div class="txt">처음부터 시작하는 꽃꽂이</div></a></li>
+                <li><a href="#"><img src="img/old.jpg"><div class="txt">오래된 스마트폰을 충전했더니</div></a></li>
             </ul>
         </aside>
 
@@ -100,5 +120,6 @@
             copyright &copy; songda. 2023 AII rights reserved
         </div>
     </div>
+    
   </body>
 </html>

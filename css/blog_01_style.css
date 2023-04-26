@@ -1,0 +1,88 @@
+@charset 'utf-8';
+
+* {margin: 0;
+padding: 0;}
+ul, li {list-style: none;}
+a {text-decoration: none;
+color: #000;}
+
+.boxA {display: flex;}
+.box3 {width: 70%;}
+.box4 {width: 30%;}
+
+.box1 {padding: 10px;}
+.logo {}
+.logo h1 {font-weight: bold;
+font-size: 30px;}
+.logo h1 a {color: #83a4a8;}
+
+
+.box2 {background-color: #7cbac1;}
+.menu {}
+.menu ul {display: flex;}
+.menu ul li {}
+.menu ul li a {display: block;
+            padding: 15px;
+        font-size: 14px;}
+.menu ul li a:hover {background-color: #75dbe7;}
+
+
+.story {}
+.story h1 {font-size: 36px;
+        margin-bottom: 20px;}
+.story img {max-width: 100%;}
+.story p {margin-bottom: 20px;
+        margin-top: 10px;}
+.story h2 {margin-top: 40px;
+        border-left: 10px solid #7cbac1;
+        padding-left: 10px;
+        font-weight: normal;}
+
+.A1 {margin-bottom: 30px;}
+.A1 h1 {font-weight: bold;
+    font-size: 18px;
+    color: #666;
+    border-bottom: dotted 2px #ddd;
+    margin-bottom: 10px;}
+.A1 ul {}
+.A1 ul li {}
+.A1 ul li a {display: block;
+            padding: 5px;
+            font-size: 14px;}
+
+.A2 {margin-bottom: 30px;}
+.A2 h1 {font-weight: bold;
+    font-size: 18px;
+    color: #666;
+    border-bottom: dotted 2px #ddd;
+    margin-bottom: 10px;}
+.A2 ul {}
+.A2 ul li {}
+.A2 ul li a {display: block;
+            font-size: 14px;
+            position: relative;}
+
+
+.A3 {margin-bottom: 30px;}
+.A3 h1 {font-weight: bold;
+    font-size: 18px;
+    color: #666;
+    border-bottom: dotted 2px #ddd;
+    margin-bottom: 10px;}
+.A3 ul {}
+.A3 ul li {}
+.A3 ul li a {display: block;
+            padding: 5px;}
+
+
+
+
+
+
+
+
+
+
+
+.box1, .boxA, .menu, .copyright {width: 1000px;
+        margin: 0 auto;}
