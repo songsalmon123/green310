@@ -106,7 +106,7 @@ margin-bottom: 5px;}
       font-size: 14px;
 
   }
-  .relation img {max-width: 100%;}
+  .relation img {width: 100%;}
   .relation .txt {}
 
 
@@ -224,6 +224,12 @@ margin-bottom: 5px;}
 
 
 @media (max-width: 599px) {
+
+  /* snsSet 설정 */
+  .snsSet span {text-indent: -9999px;
+          display: inline-block;}
+
+          .relation ul li {width: 50%;}
 
 
 }
